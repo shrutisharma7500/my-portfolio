@@ -15,6 +15,7 @@ const AboutDetails = () => {
             Architect of Enchantment
           </h2>
           <p className="font-light  text-xs sm:text-sm md:text-base   ">
+           <span className="font-bold text-2xl"> I am Shruti,</span>
             My journey in web development is powered by an array of mystical
             tools and languages, with JavaScript casting the core of my
             enchantments. I wield frameworks like React.js and Next.js with
@@ -39,12 +40,12 @@ const AboutDetails = () => {
           className={"col-span-full xs:col-span-6 lg:col-span-4 text-accent"}
         >
           <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
-            4+{" "}
+            2+{" "}
             <sub className="font-semibold text-base">years of experience</sub>
           </p>
         </ItemLayout>
 
-        <ItemLayout
+        {/* <ItemLayout
           className={"col-span-full sm:col-span-6 md:col-span-4 !p-0"}
         >
           <img
@@ -62,7 +63,7 @@ const AboutDetails = () => {
             alt="CodeBucks"
             loading="lazy"
           />
-        </ItemLayout>
+        </ItemLayout> */}
 
         <ItemLayout className={"col-span-full"}>
           <img
@@ -72,7 +73,7 @@ const AboutDetails = () => {
             loading="lazy"
           />
         </ItemLayout>
-
+{/* 
         <ItemLayout className={"col-span-full md:col-span-6 !p-0"}>
           <img
             className="w-full h-auto"
@@ -95,7 +96,7 @@ const AboutDetails = () => {
               loading="lazy"
             />
           </Link>
-        </ItemLayout>
+        </ItemLayout> */}
       </div>
     </section>
   );
