@@ -1,18 +1,35 @@
 import React from "react";
 import ItemLayout from "./ItemLayout";
 import Link from "next/link";
+import shrutii from "../images/shrutii.jpg"
+import Image from "next/image";  // Import Image from next/image
 
 const AboutDetails = () => {
   return (
-    <section className="py-20 w-full">
+    <section className=" w-full">
       <div className="grid grid-cols-12 gap-4 xs:gap-6  md:gap-8 w-full">
+           {/* Use the Image component for optimized image loading */}
+           
+        <div className="col-span-full flex justify-center mt-0 mb-10">
+          {/* Centered and positioned image */}
+          <Image 
+            src={shrutii} 
+            alt="Shruti's Image" 
+            className=""
+            width={300}
+            height={300}
+          />
+        </div>
+     
         <ItemLayout
           className={
             " col-span-full lg:col-span-8 row-span-2 flex-col items-start"
           }
         >
+      
+         
           <h2 className="  text-xl md:text-2xl text-left w-full capitalize">
-            Architect of Enchantment
+            
           </h2>
           <p className="font-light  text-xs sm:text-sm md:text-base   ">
            <span className="font-bold text-2xl"> I am Shruti,</span>
